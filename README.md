@@ -89,6 +89,24 @@ The dashboard tracks the following key performance indicators:
 
 These metrics provide an executive view of the business performance and support deeper analysis by segment, category, country, and region.
 
+## Power BI Dashboard
+
+### Executive Overview
+
+The executive view summarizes the main business indicators: total revenue, total profit, profit margin, units sold, total orders, and unique customers. It also shows annual revenue evolution, revenue by product category, revenue by country, and interactive filters for country, category, and customer segment.
+
+<p align="center">
+  <img src="images/1_overview-ejecutivo.svg" alt="Andes Retail executive overview dashboard" width="900">
+</p>
+
+### Detailed Analysis
+
+The detailed view explores revenue and profit by customer segment, profit by product category, revenue by region, and a summary table by country, region, product category, and customer segment. This page supports deeper commercial diagnosis and opportunity detection.
+
+<p align="center">
+  <img src="images/2_analisis-detallado.svg" alt="Andes Retail detailed analysis dashboard" width="900">
+</p>
+
 ## Dashboard Pages
 
 ### 1. Executive Overview
@@ -201,7 +219,7 @@ This is especially relevant for roles such as:
 - Commercial Analyst
 - Junior BI Developer
 
-## Personal Voice & Learning
+## Personal Voice and Learning
 
 This project helped me connect my background in marketing and business communication with data analytics.
 
@@ -218,8 +236,8 @@ andes-retail-commercial-performance-analysis/
 ├── andes-retail-commercial-performance-powerbi-dashboard.pbix
 ├── andes-retail-group-2024-2025-dataset.xlsx
 └── images/
-    ├── 1_overview-ejecutivo.png
-    └── 2_analisis-detallado.png
+    ├── 1_overview-ejecutivo.svg
+    └── 2_analisis-detallado.svg
 ```
 
 ## Project Files
@@ -234,7 +252,7 @@ andes-retail-commercial-performance-analysis/
   Source dataset used for the analysis.
 
 - `images/`  
-  Folder planned for clean dashboard screenshots used in portfolio presentation.
+  Dashboard previews displayed directly in this README for portfolio presentation.
 
 ## Status
 
@@ -242,7 +260,7 @@ Portfolio polish in progress on the `portfolio-polish` branch.
 
 Current focus:
 
-- Improve README documentation
-- Add clean dashboard screenshots
+- Keep README documentation clear and recruiter-friendly
+- Display dashboard previews directly in the README
 - Keep the repository structure clear
 - Prepare the project for GitHub, LinkedIn, Career Accelerator, and job interviews
