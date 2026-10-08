@@ -96,7 +96,7 @@ These metrics provide an executive view of the business performance and support 
 The executive view summarizes the main business indicators: total revenue, total profit, profit margin, units sold, total orders, and unique customers. It also shows annual revenue evolution, revenue by product category, revenue by country, and interactive filters for country, category, and customer segment.
 
 <p align="center">
-  <img src="images/1_overview-ejecutivo.svg" alt="Andes Retail executive overview dashboard" width="900">
+  <img src="images/1_overview-ejecutivo.png" alt="Andes Retail executive overview dashboard" width="900">
 </p>
 
 ### Detailed Analysis
@@ -104,38 +104,8 @@ The executive view summarizes the main business indicators: total revenue, total
 The detailed view explores revenue and profit by customer segment, profit by product category, revenue by region, and a summary table by country, region, product category, and customer segment. This page supports deeper commercial diagnosis and opportunity detection.
 
 <p align="center">
-  <img src="images/2_analisis-detallado.svg" alt="Andes Retail detailed analysis dashboard" width="900">
+  <img src="images/2_analisis-detallado.png" alt="Andes Retail detailed analysis dashboard" width="900">
 </p>
-
-## Dashboard Pages
-
-### 1. Executive Overview
-
-The Executive Overview page is designed for quick business reading.
-
-It includes:
-
-- KPI cards for revenue, profit, margin, units sold, orders, and customers
-- Annual revenue evolution between 2024 and 2025
-- Revenue by product category
-- Revenue by country
-- Interactive filters for country, product category, and customer segment
-
-This view helps stakeholders quickly understand the general commercial performance of Andes Retail Group.
-
-### 2. Detailed Analysis
-
-The Detailed Analysis page provides a deeper diagnostic view.
-
-It includes:
-
-- Revenue and profit by customer segment
-- Profit by product category
-- Revenue by region
-- Summary table by country, region, product category, and customer segment
-- Interactive filters for business exploration
-
-This view helps identify which segments, categories, and regions explain the main revenue and profit patterns.
 
 ## Key Findings
 
@@ -231,28 +201,36 @@ From a portfolio perspective, this project strengthens my ability to communicate
 
 ```text
 andes-retail-commercial-performance-analysis/
-├── README.md
+├── dashboard/
+│   └── andes-retail-commercial-performance-powerbi-dashboard.pbix
+├── datasets/
+│   └── andes-retail-group-2024-2025-dataset.xlsx
+├── images/
+│   ├── 1_overview-ejecutivo.png
+│   └── 2_analisis-detallado.png
 ├── andes-retail-commercial-performance-project-notebook.ipynb
-├── andes-retail-commercial-performance-powerbi-dashboard.pbix
-├── andes-retail-group-2024-2025-dataset.xlsx
-└── images/
-    ├── 1_overview-ejecutivo.svg
-    └── 2_analisis-detallado.svg
+└── README.md
 ```
 
-## Project Files
+## File Guide
+
+- `dashboard/andes-retail-commercial-performance-powerbi-dashboard.pbix`  
+  Power BI dashboard file with the Executive Overview and Detailed Analysis pages.
+
+- `datasets/andes-retail-group-2024-2025-dataset.xlsx`  
+  Source Excel dataset used for the commercial performance analysis.
+
+- `images/1_overview-ejecutivo.png`  
+  Screenshot of the Executive Overview page displayed directly in this README.
+
+- `images/2_analisis-detallado.png`  
+  Screenshot of the Detailed Analysis page displayed directly in this README.
 
 - `andes-retail-commercial-performance-project-notebook.ipynb`  
   Project notebook with documentation, SCQA narrative, evaluator feedback, and business interpretation.
 
-- `andes-retail-commercial-performance-powerbi-dashboard.pbix`  
-  Power BI dashboard file.
-
-- `andes-retail-group-2024-2025-dataset.xlsx`  
-  Source dataset used for the analysis.
-
-- `images/`  
-  Dashboard previews displayed directly in this README for portfolio presentation.
+- `README.md`  
+  Portfolio documentation with business context, workflow, findings, recommendations, and dashboard previews.
 
 ## Status
 
