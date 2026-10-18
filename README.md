@@ -32,7 +32,9 @@ Andes Retail Group operates across Colombia, Chile, and Peru, selling products a
 
 The business needed a clear way to evaluate commercial performance during 2024 and 2025, identify where revenue and profit were concentrated, and detect opportunities by customer segment, product category, country, and region.
 
-From a business perspective, this dashboard helps answer questions such as:
+## Business Questions
+
+This analysis addresses the following questions:
 
 - How did total revenue evolve between 2024 and 2025?
 - Which countries and regions generated the most revenue?
@@ -61,18 +63,31 @@ Main fields include:
 
 The dataset was prepared in Power Query before building the dashboard in Power BI.
 
-## Data Preparation
+## Analytical Workflow
 
-The data preparation process included:
+This project follows an **Excel → Power Query → Power BI → business insights** workflow.
 
-- Importing the Excel dataset into Power BI
-- Reviewing the structure of the table and the available business fields
-- Converting order dates into date format
-- Setting units sold as whole numbers
-- Setting unit price, revenue, and cost as numeric fields
-- Keeping categorical fields such as country, region, customer segment, season, and product category as text
-- Creating a conditional column called `Nivel_Venta` to classify orders based on revenue level
-- Validating that the dataset was ready for KPI calculation and dashboard development
+### 1. Data exploration and preparation
+
+- Imported the 2024–2025 transactional Excel dataset into Power BI Desktop.
+- Reviewed the commercial fields and adjusted data types in Power Query: order date as date, units sold as whole number, unit price/revenue/cost as decimal numbers, and geographic/customer/product attributes as text.
+- Created a conditional field, `Nivel_Venta`, to classify orders as **Venta Alta** for revenue greater than or equal to 1,000 and **Venta Baja** otherwise.
+- Reviewed data consistency before using the fields in business indicators and visualizations.
+
+### 2. Commercial KPIs
+
+- Built and interpreted the reported indicators: total revenue, total profit, profit margin, units sold, total orders, and unique customers.
+- Compared revenue and profitability by year, country, region, product category, and customer segment.
+
+### 3. Power BI reporting
+
+- Designed **Executive Overview** for rapid interpretation through KPI cards, annual revenue, category and country comparisons, and interactive filters.
+- Designed **Detailed Analysis** to explore revenue and profit by customer segment, profit by product category, revenue by region, and combinations in the summary table.
+
+### 4. Executive communication
+
+- Applied the **SCQA** framework (Situation, Complication, Question, Answer) to the overview and detailed narratives.
+- Turned descriptive business patterns into commercial recommendations and a concise executive update.
 
 ## Key Metrics
 
@@ -148,54 +163,25 @@ Based on the analysis, Andes Retail Group could consider the following actions:
 5. **Review the Economic segment separately.**  
    Its lower contribution does not necessarily mean it should be ignored, but it may require different pricing, messaging, or product strategies.
 
-## Analytical Workflow
+## Tools and Skills
 
-The project followed this workflow:
+- **Microsoft Excel:** source transactional data and commercial field interpretation.
+- **Power Query:** importing data, defining appropriate data types, reviewing consistency, and creating the `Nivel_Venta` conditional classification.
+- **Power BI Desktop:** commercial KPIs, report layout, comparative charts, table summaries, slicers, and interactive executive reporting.
+- **Commercial and Marketing Analytics:** interpreting revenue, profit, margin, sales volume, customer segments, product-category performance, and geographic differences.
+- **Business Storytelling (SCQA):** framing business questions, explaining commercial findings, and translating them into recommendations.
 
-1. Import the Excel dataset into Power BI
-2. Prepare and validate the data in Power Query
-3. Create business metrics and KPI cards
-4. Build an executive dashboard view
-5. Build a detailed diagnostic view
-6. Add filters and interactions
-7. Interpret the results using business logic
-8. Translate findings into recommendations
+## Professional Value
 
-## Tools Used
-
-- Microsoft Excel
-- Power Query
-- Power BI Desktop
-- Business intelligence dashboard design
-- Commercial performance analysis
-- SCQA storytelling framework
-
-## Portfolio Value
-
-This project demonstrates the ability to:
-
-- Transform Excel-based commercial data into a Power BI dashboard
-- Prepare data using Power Query
-- Build and interpret business KPIs
-- Analyze revenue, profit, margin, customers, orders, categories, countries, and regions
-- Communicate findings through executive storytelling
-- Convert dashboard results into business recommendations
-
-This is especially relevant for roles such as:
-
-- Data Analyst
-- Business Intelligence Analyst
-- Marketing Data Analyst
-- Commercial Analyst
-- Junior BI Developer
+This project demonstrates my ability to transform commercial data into a clear and usable executive report. The combination of Power Query preparation, business KPIs, interactive Power BI views, and actionable interpretation is relevant to **Data Analyst, Marketing Data Analyst, Commercial Analyst, and Business Intelligence Analyst** roles.
 
 ## Personal Voice and Learning
 
-This project helped me connect my background in marketing and business communication with data analytics.
+My background in marketing shaped the way I approached this case: I did not want to show sales figures without connecting them to commercial decisions. The executive view answers *what happened*; the detailed view helps explore *where* revenue and profit are concentrated.
 
-The most valuable learning was not only building charts, but understanding how a dashboard can guide business decisions. A metric such as revenue becomes more useful when it is connected to questions about customer segments, product categories, regions, and recommended actions.
+One important lesson was to separate **a visible pattern from its underlying cause**. The dashboard indicates lower revenue in 2025 than in 2024, but that alone cannot establish whether demand, pricing, product mix, seasonality, or marketing execution caused the change. Those remain hypotheses to test before committing resources.
 
-From a portfolio perspective, this project strengthens my ability to communicate insights clearly and translate commercial data into strategic recommendations.
+This work strengthened my ability to combine **data preparation, KPI interpretation, visual communication, and commercial reasoning** in a format a stakeholder can understand quickly.
 
 ## Repository Structure
 
@@ -227,18 +213,19 @@ andes-retail-commercial-performance-analysis/
   Screenshot of the Detailed Analysis page displayed directly in this README.
 
 - `andes-retail-commercial-performance-project-notebook.ipynb`  
-  Project notebook with documentation, SCQA narrative, evaluator feedback, and business interpretation.
+  Project notebook documenting the dashboard development, SCQA narrative, evaluator feedback, and business interpretation. It is a Markdown-oriented academic document, not a Python analysis pipeline.
 
 - `README.md`  
   Portfolio documentation with business context, workflow, findings, recommendations, and dashboard previews.
 
-## Status
+## Reproducibility Note
 
-Portfolio polish in progress on the `portfolio-polish` branch.
+The source Excel dataset and the Power BI `.pbix` are included in this repository. Download them and open the report in **Power BI Desktop** to explore the interactive dashboard. If the original Excel source path is unavailable on another computer, update it in **Power Query / Data source settings** before refreshing.
 
-Current focus:
+The `.ipynb` documents the original project and its SCQA storytelling. It is primarily a narrative notebook, **not an executable Python pipeline**. The two PNGs embedded above are static dashboard previews for recruiters and do not replace the interactive `.pbix`.
 
-- Keep README documentation clear and recruiter-friendly
-- Display dashboard previews directly in the README
-- Keep the repository structure clear
-- Prepare the project for GitHub, LinkedIn, Career Accelerator, and job interviews
+Results are reported in the original dataset's units; no specific currency is asserted unless confirmed by the source.
+
+## Project Status
+
+The original dashboard was completed and reviewed during the academic project. The `portfolio-polish` branch contains portfolio-documentation improvements under final review. The `main` branch remains unchanged until approval.
