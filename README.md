@@ -89,6 +89,31 @@ This project follows an **Excel → Power Query → Power BI → business insigh
 - Applied the **SCQA** framework (Situation, Complication, Question, Answer) to the overview and detailed narratives.
 - Turned descriptive business patterns into commercial recommendations and a concise executive update.
 
+## Validated Commercial Results
+
+The metrics below were independently recalculated from the **5,000 source records** in the Excel dataset committed to this repository, covering **January–December in both 2024 and 2025**. Values are expressed in the dataset's original units; the dataset does not identify a specific currency.
+
+| Metric | Verified result |
+|---|---:|
+| Revenue (2024–2025) | 5,531,994.00 |
+| Source cost (2024–2025) | 3,590,244.67 |
+| Profit (revenue minus source cost) | 1,941,749.33 |
+| Profit margin | 35.10% |
+| Units sold | 57,601 |
+| Orders | 5,000 |
+| Unique customers | 3,821 |
+
+### Year-over-year performance
+
+| Metric | 2024 | 2025 | Change |
+|---|---:|---:|---:|
+| Revenue | 2,863,384 | 2,668,610 | **−6.80%** |
+| Profit | 1,005,811.62 | 935,937.71 | **−6.95%** |
+| Profit margin | 35.13% | 35.07% | **−0.06 pp** |
+| Orders | 2,550 | 2,450 | **−3.92%** |
+
+These are **full-year comparisons**, not incomplete-year or YTD figures. The dashboard's rounded KPI cards (5.53M revenue, 1.94M profit, 35.10% margin, 58K units, 5K orders, 4K customers) are consistent with the source at their displayed precision. The small margin difference is expressed in percentage points (pp), not percent.
+
 ## Key Metrics
 
 The dashboard tracks the following key performance indicators:
@@ -126,20 +151,20 @@ The detailed view explores revenue and profit by customer segment, profit by pro
 
 Some of the main findings from the dashboard include:
 
-1. **Revenue decreased between 2024 and 2025.**  
-   The annual revenue trend shows a decline, which suggests the need to monitor commercial performance and review growth opportunities.
+1. **Revenue declined 6.80% from 2024 to 2025, while margin remained close to 35%.**  
+   Full-year revenue decreased from 2,863,384 to 2,668,610 (−194,774), while profit decreased 6.95%. The profit margin changed from 35.13% to 35.07% (−0.06 percentage points). The data shows **lower sales volume/value with broadly stable profitability per unit of revenue**, but does not establish what caused the decline.
 
-2. **The Premium segment generated the highest business value.**  
-   Premium customers contributed the most to both revenue and profit, followed by the Standard segment.
+2. **Premium led total revenue and profit, but this is a contribution measure—not proof of higher customer lifetime value.**  
+   Premium produced 2,598,217 in revenue and 914,605.16 in profit, ahead of the Standard segment (2,436,769 and 851,758.99). Further customer-level analysis would be required to establish lifetime value or retention.
 
 3. **The Economic segment had a lower contribution.**  
    This segment may require a differentiated commercial strategy depending on the company's goals for acquisition, retention, or profitability.
 
-4. **Sports and Electronics showed strong profit performance.**  
-   These categories stood out as relevant contributors to profitability.
+4. **Sports and Electronics led by absolute profit contribution.**  
+   Sports generated 505,253.12 in profit (35.07% margin), and Electronics generated 496,738.15 (35.26% margin). These differences should not be confused with a large category-level margin advantage.
 
-5. **Regional performance was relatively balanced, with the North region leading revenue.**  
-   North generated the highest revenue, while Center and South remained close, suggesting that regional performance should continue to be monitored.
+5. **Regional revenue was relatively balanced, with North slightly ahead.**  
+   North generated 1,890,166, Center 1,857,015, and South 1,784,813 in revenue across the two years. These are descriptive differences; the dashboard does not establish regional causes.
 
 6. **The detailed summary table supports more specific opportunity detection.**  
    Combining country, region, product category, and customer segment helps identify more precise commercial patterns.
@@ -148,8 +173,8 @@ Some of the main findings from the dashboard include:
 
 Based on the analysis, Andes Retail Group could consider the following actions:
 
-1. **Monitor the revenue decline between 2024 and 2025.**  
-   The company should review whether the decrease is linked to demand, seasonality, product mix, pricing, campaign performance, or regional execution.
+1. **Investigate the verified 6.80% annual revenue decline.**  
+   Break down the change in orders, units, average order value, country, category, and segment. Demand, seasonality, product mix, pricing, and campaigns are **hypotheses to investigate**, not proven explanations.
 
 2. **Prioritize commercial actions for the Premium segment.**  
    Since Premium customers generate the highest revenue and profit, this segment should be considered for retention, loyalty, and upselling strategies.
@@ -228,4 +253,4 @@ Results are reported in the original dataset's units; no specific currency is as
 
 ## Project Status
 
-The original dashboard was completed and reviewed during the academic project. The `portfolio-polish` branch contains portfolio-documentation improvements under final review. The `main` branch remains unchanged until approval.
+The original dashboard was completed and reviewed during the academic project. On `portfolio-polish`, the source Excel figures, annual comparison, and principal commercial findings have been cross-checked for portfolio documentation. The published Power BI report remains the original project; the `main` branch will only be updated after final approval.
